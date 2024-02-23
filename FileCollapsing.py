@@ -1,6 +1,6 @@
 import os
 
-def file_collapsing(WD, PATTERN):
+def FileCollapsing(WD, PATTERN):
     os.chdir(WD)
     lst = [file for file in os.listdir() if file.endswith(PATTERN)]
     header = None
@@ -31,7 +31,7 @@ def file_collapsing(WD, PATTERN):
 
 
 # Reading files
-cnv = file_collapsing("/Users/bxz262/Library/CloudStorage/GoogleDrive-bxz262@miami.edu/My Drive/Bachisio/Documents/PhD_PiBS_CAB/Courses/Courses_Spring2024/PIB_706_Informatics_for_the_Biosciences/Assignments/final_project_proposal/WORK/", ".facets.cnv.txt")
+cnv = FileCollapsing("/Users/bxz262/Library/CloudStorage/GoogleDrive-bxz262@miami.edu/My Drive/Bachisio/Documents/PhD_PiBS_CAB/Courses/Courses_Spring2024/PIB_706_Informatics_for_the_Biosciences/Assignments/final_project_proposal/WORK/", ".facets.cnv.txt")
 
 # Merging based on sample
 cnv_1 = []
