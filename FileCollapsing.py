@@ -19,8 +19,8 @@ def FileCollapsing(WD, PATTERN):
                 lines.pop(0)
             new_data.extend(lines)
 
-    for i in range(len(new_data)):
-        new_data[i] = new_data[i].strip("\n") + "\t" + file_name + "\n"
+        for i in range(len(new_data)):
+            new_data[i] = new_data[i].strip("\n") + "\t" + file_name + "\n"
 
     DEF=[]
     for row in new_data:
