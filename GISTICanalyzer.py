@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-class FileProcessor:
+class GISTICAnalyzer:
     def __init__(self, working_dir, file_pattern):
         self.working_dir = working_dir
         self.file_pattern = file_pattern
@@ -111,6 +111,9 @@ class FileProcessor:
         plt.ylabel('Abnormal Peaks')  # Set the label for y-axis
         plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
         plt.tight_layout()  # Adjust layout to prevent clipping of labels
+
+        # Save the plot to a PDF file
+        plt.savefig(output_file)
 
         # Save the plot to a PDF file
         plt.savefig(output_file)
